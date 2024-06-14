@@ -66,14 +66,14 @@
     }
   }
 
-  @layer base {
+  /* @layer base {
     * {
       @apply tailwind.config,jsborder-border;
     }
     body {
       @apply tailwind.config,jsbg-background tailwind.config,jstext-foreground;
     }
-  }
+  } */
 
 * {
   margin: 0;
