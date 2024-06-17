@@ -66,12 +66,22 @@ export const Home = () => {
   console.log(transactionReceiverData);
 
   useEffect(() => {
-    if (userError || accountError || transactionSenderError) {
+    if (
+      userError ||
+      accountError ||
+      transactionSenderError ||
+      transactionReceiverError
+    ) {
       console.error("Erro ao buscar dados:", userError || accountError);
     }
   }, [userError, accountError]);
 
-  if (userLoading || accountLoading || transactionSenderLoading) {
+  if (
+    userLoading ||
+    accountLoading ||
+    transactionSenderLoading ||
+    transactionReceiverLoading
+  ) {
     return <div>Carregando...</div>;
   }
 
