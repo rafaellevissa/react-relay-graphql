@@ -48,11 +48,12 @@ export function useRegisterUser() {
           },
         },
       });
-      localStorage.setItem("user", response.data.createUser.user);
+
+      localStorage.setItem("taxId", response.data.createUser.user.taxId);
       localStorage.setItem("token", response.data.createUser.token);
       navigation("/home");
     } catch (error) {
-      console.log(error);
+      console.log((error as Error).message);
     }
   };
 

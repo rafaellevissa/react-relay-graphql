@@ -63,8 +63,6 @@ export const Home = () => {
     skip: !userId,
   });
 
-  console.log(transactionReceiverData);
-
   useEffect(() => {
     if (
       userError ||
@@ -72,7 +70,13 @@ export const Home = () => {
       transactionSenderError ||
       transactionReceiverError
     ) {
-      console.error("Erro ao buscar dados:", userError || accountError);
+      console.error(
+        "Erro ao buscar dados:",
+        userError ||
+          accountError ||
+          transactionSenderError ||
+          transactionReceiverError
+      );
     }
   }, [userError, accountError]);
 

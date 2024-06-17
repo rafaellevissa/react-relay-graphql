@@ -53,7 +53,6 @@ export const FormTransaction = ({ userId }: Props) => {
                 </Label>
                 <Input
                   id="value"
-                  type="number"
                   placeholder="Valor da transação"
                   className="w-full border p-2 rounded bg-zinc-300"
                   {...register("value")}

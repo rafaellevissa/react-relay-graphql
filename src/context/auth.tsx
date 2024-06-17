@@ -15,7 +15,7 @@ export const AuthContext = createContext<Auth>({} as Auth);
 export const AuthProvider = ({ children }: ChildrenProvider) => {
   function logout() {
     localStorage.removeItem("token");
-    localStorage.removeItem("user");
+    localStorage.removeItem("taxId");
     window.location.href = "/";
   }
 
