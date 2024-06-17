@@ -2,12 +2,12 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useMutation } from "@apollo/client";
-import { TRANSACTION } from "@/graphql/mutations";
+import { TRANSACTION } from "../graphql/mutations";
 import {
   FIND_ACCOUNT,
   FIND_TRANSACTIO_RECEIVER,
   FIND_TRANSACTIO_SENDER,
-} from "@/graphql/queries";
+} from "../graphql/queries";
 
 type TransactionData = {
   receiver: string;

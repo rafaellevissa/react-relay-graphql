@@ -1,14 +1,14 @@
-import { CardUserAndAccount } from "@/components/CardUserAndAccount";
-import { FormTransaction } from "@/components/FormTransaction";
-import { Menu } from "@/components/Menu";
-import { TransactionCard } from "@/components/TransactionCard";
+import { CardUserAndAccount } from "../../components/CardUserAndAccount";
+import { FormTransaction } from "../../components/FormTransaction";
+import { Menu } from "../../components/Menu";
+import { TransactionCard } from "../../components/TransactionCard";
 import {
   FIND_ACCOUNT,
   FIND_TRANSACTIO_RECEIVER,
   FIND_TRANSACTIO_SENDER,
   FIND_USER,
-} from "@/graphql/queries";
-import { useAuthContext } from "@/hooks/useAuthContext";
+} from "../../graphql/queries";
+import { useAuthContext } from "../../hooks/useAuthContext";
 import { useQuery } from "@apollo/client";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";

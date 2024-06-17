@@ -1,8 +1,8 @@
-import { LOGIN } from "@/graphql/mutations";
+import { LOGIN } from "../graphql/mutations";
 import { useMutation } from "@apollo/client";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import { useNavigate, useNavigation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import * as yup from "yup";
 
 type LoginData = {

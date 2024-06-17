@@ -1,4 +1,4 @@
-import { CREATE_USER } from "@/graphql/mutations";
+import { CREATE_USER } from "../graphql/mutations";
 import { useMutation } from "@apollo/client";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";

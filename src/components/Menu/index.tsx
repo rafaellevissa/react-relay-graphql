@@ -1,4 +1,4 @@
-import { useAuthContext } from "@/hooks/useAuthContext";
+import { useAuthContext } from "../../hooks/useAuthContext";
 import { NavLink } from "react-router-dom";
 
 export const Menu = () => {

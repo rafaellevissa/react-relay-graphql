@@ -1,5 +1,5 @@
-import { Layout } from "@/components/Layout";
-import { Button } from "@/components/ui/button";
+import { Layout } from "../../components/Layout";
+import { Button } from "../../components/ui/button";
 import {
   Card,
   CardHeader,
@@ -7,9 +7,9 @@ import {
   CardDescription,
   CardContent,
   CardFooter,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+} from "../../components/ui/card";
+import { Input } from "../../components/ui/input";
+import { Label } from "../../components/ui/label";
 import { NavLink } from "react-router-dom";
 import { useLogin } from "../../hooks/useLogin";
 
